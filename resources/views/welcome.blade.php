@@ -11,22 +11,22 @@
 </head>
 
 <body class="antialiased">
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-    <div class="flex flex-col items-center justify-center min-h-screen p-6">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-        Welcome to the Ninja Network
-      </h1>
+    <div class="min-h-screen bg-gradient-to-tl from-red-600 via-red-900 to-black">
+        <div class="flex flex-col items-center justify-center min-h-screen p-6">
+            <h1 class="text-4xl font-bold text-white mb-4">
+                Welcome to the Ninja Network
+            </h1>
 
-      <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-        Click the button below to view the list of ninjas.
-      </p>
+            <p class="text-lg text-gray-200 mb-8">
+                Click the button below to view the list of ninjas.
+            </p>
 
-      <a href="/ninjas"
-        class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300">
-        Find Ninjas!
-      </a>
+            <a href="/ninjas"
+                class="px-6 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition duration-300 shadow-lg">
+                Find Ninjas!
+            </a>
+        </div>
     </div>
-  </div>
 </body>
 
 </html>
