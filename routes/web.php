@@ -15,6 +15,10 @@ Route::get('/ninjas', function () {
     return view('ninjas.index', ["greeting" => "Hello, Ninjas!", "ninjas" => $ninjas]);
 });
 
+Route::get('/ninjas/create', function () {
+    return view('ninjas.create');
+});
+
 Route::get('/ninjas/{id}', function ($id) {
     $ninjas = [
         ["id" => 1, "name" => "Naruto", "skill" => 16],
