@@ -11,14 +11,21 @@
 </head>
 
 <body>
-    <div class="container mx-auto p-8">
-        <h2 class="text-2xl font-bold mb-4 text-gray-800">Currently Available Ninjas</h2>
-        <ul class="list-disc pl-6 space-y-2">
-            <li class="text-gray-700 hover:text-gray-900">Ninja 1</li>
-            <li class="text-gray-700 hover:text-gray-900">Ninja 2</li>
-            <li class="text-gray-700 hover:text-gray-900">Ninja 3</li>
-        </ul>
-    </div>
+  <div class="container mx-auto p-8">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">Currently Available Ninjas</h2>
+    <p>{{ $greeting }}</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li class="text-gray-700 hover:text-gray-900">
+        <a href="/ninjas/{{ $ninjas[0]['id'] }}">{{ $ninjas[0]['name'] }}</a>
+      </li>
+      <li class="text-gray-700 hover:text-gray-900">
+        <a href="/ninjas/{{ $ninjas[1]['id'] }}">{{ $ninjas[1]['name'] }}</a>
+      </li>
+      <li class="text-gray-700 hover:text-gray-900">
+        <a href="/ninjas/{{ $ninjas[2]['id'] }}">{{ $ninjas[2]['name'] }}</a>
+      </li>
+    </ul>
+  </div>
 </body>
 
 </html>
