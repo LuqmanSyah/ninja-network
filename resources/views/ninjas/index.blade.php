@@ -5,17 +5,17 @@
         🥷 Currently Available Ninjas
       </h2>
 
-      @if ($greeting)
-        <div class="bg-green-100 border-l-4 border-green-500 p-4 mb-6">
-          <p class="text-green-700">{{ $greeting }}</p>
-        </div>
-      @endif
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        @foreach ($ninjas as $ninja)
-            <x-card :ninja="$ninja" />
-        @endforeach
+    @if ($greeting)
+      <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6 rounded-lg shadow-sm">
+        <p class="text-red-700 font-medium">{{ $greeting }}</p>
       </div>
+    @endif
+
+    <div class="grid grid-cols-1 gap-6 w-full">
+      @foreach ($ninjas as $ninja)
+        <x-card :ninja="$ninja" />
+      @endforeach
+    </div>
     </div>
   </div>
 </x-layout>
